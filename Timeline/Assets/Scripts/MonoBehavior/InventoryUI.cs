@@ -6,7 +6,7 @@ using System;
 using System.Linq;
 [RequireComponent(typeof(Inventory))]
 public class InventoryUI : MonoBehaviour{
-
+    //test test
     static Inventory inv;
     public List<SlotUI> slotsScript = new List<SlotUI>();
     public List<Image> slotsIcon = new List<Image>();
