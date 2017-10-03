@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timeline", "Timeline.csproj", "{778E3F15-60C5-B97B-58D4-7BBF229FD261}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timeline.Editor.Plugins", "Timeline.Editor.Plugins.csproj", "{A119E9F6-A932-0E3D-D4AB-F0BA609DA08C}"
