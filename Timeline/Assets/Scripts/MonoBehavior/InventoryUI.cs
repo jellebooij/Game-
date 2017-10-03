@@ -24,14 +24,6 @@ public class InventoryUI : MonoBehaviour{
     void slotsInit()
     {
 
-        GameObject[] slotsObjects = inv.getSlots();
-        
-        for(int i = 0; i < slotsObjects.Length; i++)
-        {
-            slotsScript.Add(slotsObjects[i].GetComponent<SlotUI>());
-            slotsIcon.Add(slotsObjects[i].GetComponentsInChildren<Image>()[1]);
-        }
-
         if (slotsScript.Count != 0)
         {
             for (int i = 0; i < slotsScript.Count; i++)
@@ -40,6 +32,17 @@ public class InventoryUI : MonoBehaviour{
                 slotsScript[i].hover += hover;
                 slotsScript[i].hoverColor = slotHoverColor;
             }
+        }
+    }
+
+    public void slotsRefresh()
+    {
+        GameObject[] slotsObjects = inv.getSlots();
+
+        for (int i = 0; i < slotsObjects.Length; i++)
+        {
+            slotsScript.Add(slotsObjects[i].GetComponent<SlotUI>());
+            slotsIcon.Add(slotsObjects[i].GetComponentsInChildren<Image>()[1]);
         }
     }
 
