@@ -8,7 +8,7 @@ using System.Linq;
 public class InventoryUI : MonoBehaviour{
 
     static Inventory inv;
-    List<SlotUI> slotsScript = new List<SlotUI>();
+    public List<SlotUI> slotsScript = new List<SlotUI>();
     public List<Image> slotsIcon = new List<Image>();
     public Color slotHoverColor;
 
@@ -16,7 +16,7 @@ public class InventoryUI : MonoBehaviour{
     {
         inv = Inventory.Instance;
         inv.InventoryRefresh += RefreshInventoryUi;
-
+       
         slotsInit();
         
     }
@@ -37,7 +37,12 @@ public class InventoryUI : MonoBehaviour{
 
     public void slotsRefresh()
     {
-        GameObject[] slotsObjects = inv.getSlots();
+        slotsIcon.Clear();
+        slotsScript.Clear();
+
+        Inventory inventory = FindObjectOfType<Inventory>();
+        
+        GameObject[] slotsObjects = inventory.getSlots();
 
         for (int i = 0; i < slotsObjects.Length; i++)
         {

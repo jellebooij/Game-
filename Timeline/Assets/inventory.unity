@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -924,20 +924,6 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -1149,7 +1135,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbe51a00367d428458b9671bb4fa20fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotsIcon: []
+  slotsScript:
+  - {fileID: 1073859800}
+  - {fileID: 1415063256}
+  - {fileID: 1877427629}
+  - {fileID: 1725962190}
+  - {fileID: 403765039}
+  slotsIcon:
+  - {fileID: 1434074667}
+  - {fileID: 1273903407}
+  - {fileID: 157240593}
+  - {fileID: 1388442493}
+  - {fileID: 2133475628}
   slotHoverColor: {r: 0.6911765, g: 0.6911765, b: 0.6911765, a: 1}
 --- !u!114 &1918952831
 MonoBehaviour:
